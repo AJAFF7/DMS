@@ -13,6 +13,7 @@ const port = 8282;
 const app = express();
 
 app.use(express.json());
+<<<<<<< HEAD
 
 //app.use(cors());
 
@@ -21,6 +22,9 @@ app.use(cors({
 }));
 
 
+=======
+app.use(cors());
+>>>>>>> 212008c0 (Added Some-10)
 app.use(express.static("build"));
 app.use("/auth", userRouter);
 
@@ -33,6 +37,12 @@ mongoose.connect('mongodb+srv://ajsengineer:mdb5550140@clients.dzqygjh.mongodb.n
   .catch((err) => { console.log(err); });
 
 app.listen(port, () => console.log("Server running on port:", port));
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 212008c0 (Added Some-10)
 
 
 
