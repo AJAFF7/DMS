@@ -26,6 +26,13 @@ mongoose.connect('mongodb+srv://ajsengineer:mdb5550140@clients.dzqygjh.mongodb.n
   .catch((err) => { console.log(err); });
 
 app.listen(port, () => console.log("Server running on port:", port));
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> 212008c0 (Added Some-10)
 
 
 
