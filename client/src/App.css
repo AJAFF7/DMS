@@ -1192,7 +1192,7 @@ padding-right: 10px;
 } */
 
 .dark-mode-default {
-    background: linear-gradient(to right, #5e452bd4, #5e452bd2);
+    background: linear-gradient(to left, #717171, #666, #717171e4);  
 }
 
 .dark-mode-alt1 {
@@ -1200,7 +1200,7 @@ padding-right: 10px;
 }
 
 .dark-mode-alt2 {
-    background: linear-gradient(to left, #717171, #666, #717171e4);
+    background: linear-gradient(to right, #5e452bd4, #5e452bd2);
 }
 .dark-mode-alt3 {
     background: linear-gradient(to right, #716656, #716656, #716656);  
