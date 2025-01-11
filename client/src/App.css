@@ -2,12 +2,11 @@
 .App {
   text-align: center;
 
-   height: 100%;
-  width: 100%;
+  height: 100%;
   margin: 0 auto;
   background-color: #555;
   min-height: 100vh;
-}  */
+} */
 
 .App-logo {
     /* height: 40vmin;
@@ -91,7 +90,7 @@ input {
     font-size: 16px;
     font-weight: light;
     border-radius: 4px;
-    /* background-color: #4b4949; */
+    /* background-color: #555; */
     background-color: #5a5959;
     border: 2px solid rgb(52, 50, 50);
     color: black;
@@ -170,16 +169,35 @@ input {
     background-color: #e02020;
 }
 
-.submit {
+.submit-img {  
+    background-color: transparent; /* Make the background transparent */
+    border: none; /* Remove any border */
     color: #000000;
-    background-color: #d1a520;
     font-size: small;
-    border-radius: 05px;
-    border: 0.5px solid black;
-    box-shadow: 0 3px 03px rgb(2, 2, 2);
-    margin-left: 35%;
-    margin-top: 20px;
+    margin-left: 45%;
+    margin-top: 10px;
 }
+
+.submit-img:hover {
+  background-color: greey; /* Darker shade on hover */
+  
+}
+
+.register-img {  
+    background-color: transparent; /* Make the background transparent */
+    border: none; /* Remove any border */
+    color: #000000;
+    font-size: small;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+
+.register-img:hover {
+  background-color: greey; /* Darker shade on hover */
+  
+}
+
+
 
 .submit-tp {
     margin-top: 90px;
@@ -205,6 +223,7 @@ input {
     margin-top: 04px;
     /* space between input field */
 }
+
 
 .version {
     margin-top: 50px;
@@ -359,89 +378,32 @@ input {
     justify-content: space-between;
 }
 
+
 .login {
-    flex-direction: column;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    padding: 50px;
-    margin-top: 100px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+  padding: 50px;
 
-    border-radius: 15px;
-    box-shadow: 0 0 319px rgb(18, 18, 26);
-    /* box-shadow: 0 0 80px  rgb(147, 65, 65); */
-    margin-left: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 319px rgb(18, 18, 26);
+  width: 150px;
+  height: 140px;
+  border: 3px solid #0c0c0c;
 
-    width: 150px;
-    height: 140px;
-    border: 3px solid #0c0c0c;
+  position: absolute;      /* Use absolute positioning */
+  top: 50%;                /* Position 50% from the top */
+  left: 50%;               /* Position 50% from the left */
+  transform: translate(-50%, -50%); /* Center the element exactly */
 }
-
-.login-name {
-    margin-left: 35px;
-}
-
-.register-name {
-    margin-left: 35px;
-}
-
-.register {
-    flex-direction: column;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    padding: 50px;
-    margin-top: 100px;
-
-    border-radius: 15px;
-    box-shadow: 0 0 319px rgb(18, 18, 26);
-    /* box-shadow: 0 0 80px  rgb(147, 65, 65); */
-    margin-left: 50px;
-
-    width: 150px;
-    height: 140px;
-    border: 3px solid #0c0c0c;
-
-    margin-left: 650px;
-    margin-top: 380px;
-
-    display: flex;
-    justify-content: center;
-    /* Horizontal centering */
-    align-items: center;
-    /* Vertical centering */
-    flex-direction: row;
-}
-
-.useru-logo-regis {
-    height: 22px;
-    width: 22px;
-    position: absolute;
-    margin-right: 200px;
-    margin-bottom: 15px;
-
-    padding: 07px 0 0 08px;
-}
-.userp-logo-regis {
-    height: 22px;
-    width: 22px;
-    position: absolute;
-    margin-right: 195px;
-    margin-top: 53px;
-    padding: 07px 0 0 08px;
-}
-
-/* .second-input{
-  position: absolute;
-padding-right: 10px;
-} */
 
 .useru-logo {
     height: 22px;
     width: 22px;
     position: absolute;
     margin-right: 200px;
-    margin-top: 60px;
+    margin-bottom: 60px;
 
     padding: 07px 0 0 08px;
 }
@@ -450,25 +412,98 @@ padding-right: 10px;
     height: 22px;
     width: 22px;
     position: absolute;
-    margin-right: 195px;
-    margin-top: 93px;
+    margin-right: 199px;
+    margin-top: 0px;
     padding: 07px 0 0 08px;
 }
 
-.textloginpage {
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    /* background-color: rgb(11, 11, 153);  */
-    /* opacity: 50%;  */
-    font-family: "Abril Fatface";
-    padding: 10px;
-    /* border-radius: 10px;  */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
-    animation: slideIn 0.5s ease-out;
-    padding: 10px;
-    margin-left: 68%;
 
-    color: black;
+
+
+
+.login-name {
+    margin-left: 35px;
+      margin-top: 63px;
 }
+
+.register-name {
+    margin-left: 35px;
+    margin-top: 50px;
+   
+}
+
+
+
+.register {
+  flex-direction: column;
+  display: flex;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
+  padding: 50px;
+
+  border-radius: 15px;
+  box-shadow: 0 0 319px rgb(18, 18, 26);
+  width: 150px;
+  height: 140px;
+  border: 3px solid #0c0c0c;
+
+  position: absolute;      /* Use absolute positioning */
+  top: 50%;                /* Position 50% from the top */
+  left: 50%;               /* Position 50% from the left */
+  transform: translate(-50%, -50%); /* Center the element exactly */
+}
+
+
+    
+
+.useru-logo-regis {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    margin-right: 200px;
+    margin-bottom: 60px;
+    
+
+    padding: 07px 0 0 08px;
+}
+.userp-logo-regis {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    margin-right: 199px;
+    margin-bottom: 0px;
+    padding: 07px 0 0 08px;
+}
+
+/* .second-input{
+  position: absolute;
+padding-right: 10px;
+} */
+
+
+
+
+.textloginpage {
+  font-family: "Abril Fatface";
+  padding: 10px;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100vw;
+
+  /* Add some space from the top */
+  margin-top: 20px;
+
+  animation: slideIn 0.5s ease-out;
+}
+
+
+
+
+
 
 .textloginpage-p {
     font-family: "Abril Fatface";
@@ -582,7 +617,31 @@ padding-right: 10px;
     }
   } */
 
-.slideIn {
+/* Popup animation for alert */
+@keyframes popupIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes popupOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* Apply popup animation */
+ .slideIn {
     animation:
         slideIn 0.4s forwards,
         slide-out-animation 1s forwards;
@@ -591,9 +650,9 @@ padding-right: 10px;
 .alert-all {
     padding: 20px;
 
-    margin-bottom: 15px;
+    margin-bottom: 05px;
 
-    height: 20px;
+    height: 15px;
     width: 180px;
 
     justify-content: center;
@@ -635,6 +694,7 @@ padding-right: 10px;
         transform: translateX(0);
     }
 }
+
 
 .alert-dameg {
     border: 1px solid #ccc;
@@ -1150,7 +1210,7 @@ padding-right: 10px;
     background-color: #717171;
     display: flex;
     min-height: 100vh;
-    /* min-width: 200%; */
+     min-width: 150%;
 
     justify-content: left;
     transition: background-color 0.1s ease;
@@ -1743,4 +1803,70 @@ transform: scale(1.5);
 .nav-home {
     margin-top: 5px;
     margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.change {
+  
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove any border */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  cursor: pointer; /* Makes the button clickable */
+  position: relative; /* Ensure proper positioning */
+  transform: translateY(-52%); /* Vertically center the button */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  font-size: 30px; /* Size of the symbol */
+  color: #1CC700; /* Green color for the symbol */
+  font-weight: bold; /* Make the symbol bold */
+  text-align: center; /* Center align the symbol */
+  margin-top: 38px;
+  margin-left: 220px;
+}
+
+.change:hover {
+  background-color: greey; /* Darker shade on hover */
+  transform: translateY(-52%) scale(1.5); /* Slight scale effect on hover */
+}
+
+
+
+
+
+
+
+.back-img {
+  
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove any border */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  cursor: pointer; /* Makes the button clickable */
+  position: relative; /* Ensure proper positioning */
+  transform: translateY(-52%); /* Vertically center the button */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  font-size: 30px; /* Size of the symbol */
+  color: #28a745; /* Green color for the symbol */
+  font-weight: bold; /* Make the symbol bold */
+  text-align: center; /* Center align the symbol */
+  margin-top: 43px;
+  margin-left: 220px;
+}
+
+.back-img:hover {
+  background-color: greey; /* Darker shade on hover */
+  transform: translateY(-52%) scale(1.5); /* Slight scale effect on hover */
 }

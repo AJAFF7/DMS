@@ -78,6 +78,9 @@ function App() {
           <Route path="/personal_1_logout" element={<Personal_1_logout />} />
           <Route path="/deleteAccount" element={<DeleteAccount />} />{" "}
           <Route path="/alertp1" element={<Alertp1 />} />
+          <Route path="/register" element={<Personal_1_register />} /> {/* Register Route */}
+
+
         </Routes>
 
         {/* <Weather /> */}

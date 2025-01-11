@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 // import Header from './Header'
 // import Home1 from './Home1'
-// import Register from './Register'
-// import Delete from './Delete';
+//import Register from './Register'
+//import Delete from './Delete';
 
 import Texthome from "./Text-home";
 import Personal_1_login from "./Personal-1/Personal-1-login";
@@ -34,12 +34,12 @@ function Home() {
 
         <div class="container">
           <div className="personal-home">
-            <Personal_1_login />
-            {/* <Personal_1_register /> */}
+           <Personal_1_login />
+          {/*<Personal_1_register /> */}
           </div>
         </div>
 
-        {/* <Home1 />
+       {/*  <Home1 />
           <Header />
             <TransportDb/>  */}
       </div>
