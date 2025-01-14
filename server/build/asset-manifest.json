@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6269b80a.css",
+    "main.css": "/static/css/main.5d0593e8.css",
     "main.js": "/static/js/main.cc4b0350.js",
     "static/media/minimalist5.jpg": "/static/media/minimalist5.eb854b4e3dac781b2406.jpg",
     "static/media/minimalist6.jpg": "/static/media/minimalist6.9a9f374cda8ed19b4fa3.jpg",
@@ -9,11 +9,11 @@
     "static/media/minimalist2.jpg": "/static/media/minimalist2.78d69d24c9bf8b50e2af.jpg",
     "static/media/minimalist3.jpg": "/static/media/minimalist3.a9d17f796fab502431d4.jpg",
     "index.html": "/index.html",
-    "main.6269b80a.css.map": "/static/css/main.6269b80a.css.map",
+    "main.5d0593e8.css.map": "/static/css/main.5d0593e8.css.map",
     "main.cc4b0350.js.map": "/static/js/main.cc4b0350.js.map"
   },
   "entrypoints": [
-    "static/css/main.6269b80a.css",
+    "static/css/main.5d0593e8.css",
     "static/js/main.cc4b0350.js"
   ]
 }
