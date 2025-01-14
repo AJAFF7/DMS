@@ -3,7 +3,7 @@ import React from 'react'
 function Texthome() {
   return (
     <div>
-        <h2 className='textloginpage'>Data Managment System</h2>
+        <h1 className='textloginpage'>Data Management System</h1>
         
         </div>
   )

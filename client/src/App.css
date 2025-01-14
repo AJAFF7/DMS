@@ -100,6 +100,8 @@ input {
     height: 17px;
 }
 
+
+
 .input-tp {
     padding: 05px;
     font-size: 16px;
@@ -176,12 +178,15 @@ input {
     font-size: small;
     margin-left: 45%;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .submit-img:hover {
   background-color: greey; /* Darker shade on hover */
   
 }
+
+
 
 .register-img {  
     background-color: transparent; /* Make the background transparent */
@@ -190,12 +195,16 @@ input {
     font-size: small;
     margin-left: 45%;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .register-img:hover {
   background-color: greey; /* Darker shade on hover */
   
 }
+
+
+
 
 
 
@@ -492,18 +501,13 @@ padding-right: 10px;
   justify-content: center;
   align-items: flex-start;
 
-  width: 100vw;
+  width: 93vw;
 
   /* Add some space from the top */
   margin-top: 20px;
 
   animation: slideIn 0.5s ease-out;
 }
-
-
-
-
-
 
 .textloginpage-p {
     font-family: "Abril Fatface";
@@ -524,6 +528,8 @@ padding-right: 10px;
         transform: translateY(0);
     }
 }
+
+
 
 .textloginpage-manager {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -563,6 +569,9 @@ padding-right: 10px;
     align-items: center;
     margin-right: 10px;
   } */
+  
+  
+
 
 /* .mainlogo:hover{
     animation: spin infinite 03s cubic-bezier(0.215, 0.610, 0.355, 1)
@@ -578,6 +587,10 @@ padding-right: 10px;
     opacity: 03%;
     animation: slideIn 3s forwards;
 }
+
+
+
+
 
 /* .navbutton{
     justify-content: space-between;
@@ -647,7 +660,7 @@ padding-right: 10px;
         slide-out-animation 1s forwards;
 }
 
-.alert-all {
+/* .alert-all {
     padding: 20px;
 
     margin-bottom: 05px;
@@ -660,8 +673,7 @@ padding-right: 10px;
     text-align: center;
     margin-left: 420px;
 
-    /* animation: slideAnimation 3s infinite */
-}
+} 
 
 .success {
     background-color: #d4edda;
@@ -685,6 +697,7 @@ padding-right: 10px;
     margin-top: 20px;
 }
 
+
 @keyframes slidein {
     from {
         transform: translateX(-100%);
@@ -693,12 +706,12 @@ padding-right: 10px;
     to {
         transform: translateX(0);
     }
-}
+} */
 
 
 .alert-dameg {
     border: 1px solid #ccc;
-    border-radius: 8cap;
+    border-radius: 1cap;
     margin-bottom: 15px;
 
     height: 40px;
@@ -712,6 +725,22 @@ padding-right: 10px;
 
     animation: pulse 2s ease-in-out infinite;
 }
+
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shake {
+    animation: shake 0.6s ease-in-out;
+  }
+  
+  
+
 
 .useru-logo-alert {
     height: 50px;
@@ -1203,6 +1232,7 @@ padding-right: 10px;
     color: beige;
     font-size: 12px;
 }
+  
 
 /* App.css */
 
@@ -1251,8 +1281,11 @@ padding-right: 10px;
     right: 5px;
 } */
 
-.dark-mode-default {
+/*.dark-mode-default {
     background: linear-gradient(to left, #717171, #666, #717171e4);  
+} */
+.dark-mode-default {
+    background: linear-gradient(135deg, #222222, #555, #222222); 
 }
 
 .dark-mode-alt1 {
@@ -1870,3 +1903,154 @@ transform: scale(1.5);
   background-color: greey; /* Darker shade on hover */
   transform: translateY(-52%) scale(1.5); /* Slight scale effect on hover */
 }
+
+
+
+
+
+
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shake {
+    animation: shake 0.6s ease-in-out;
+  }
+  
+
+
+
+/* Auth prompt input styling */
+.auth-prompt {
+    position: fixed;
+    top: 50%; /* Position vertically at the center */
+    left: 50%; /* Position horizontally at the center */
+    transform: translate(-50%, -50%); /* Adjust for true centering */
+    background-color: #222222;
+    background: linear-gradient(535deg, #222222, #222222);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    width: 215px;
+    height: 203px;
+    z-index: 999;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    animation: pop-in 0.4s ease-out; /* Subtle pop-in effect */
+  }
+
+  
+
+
+
+  /* Subtle pop-in animation */
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -60%) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  /* Input field styling */
+  .auth-prompt input {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    /*margin-top: 05px; */
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background 0.1s ease;
+  }
+  
+ /* Input field styling */
+.auth-prompt input {
+    padding: 10px;
+    margin-bottom: 70px;
+    width: 80%; /* Adjust width of the input field */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center; /* Center the text inside the input */
+  }
+
+
+  /* Input focus effect */
+  .auth-prompt input:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Button styling */
+  .auth-prompt button {
+    padding: 05px 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  
+.auth-prompt button:hover {
+    transform: translateY(1px);
+   /* box-shadow: 0 6px 15px rgba(255, 105, 0, 0.4); */
+  }
+  
+  .auth-prompt button:active {
+    transform: translateY(0);
+    /*box-shadow: 0 4px 10px rgba(255, 105, 0, 0.2); */
+  }
+  
+
+
+  
+
+
+.title {
+color: #666;
+}
+
+/* Close Button Styling */
+.close-auth {
+  position: absolute;
+  top: -19.5px; /* Adjusted for better positioning */
+  right: -0px; /* Adjusted for better positioning */
+  background-color: transparent; /* No background */
+  border: 1px solid #555; /* Border around the button */
+  color: #C01C28; /* Color of the text */
+  font-size: 18px; /* Adjusted for better visibility of the text */
+  font-weight: bold;
+  width: 30px; /* Set to make it a circle */
+  height: 30px; /* Height matches width to make it a perfect circle */
+  border-radius: 50%; /* Ensures the button is circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0; /* Ensures no padding inside */
+  text-align: center; /* Centers the text inside the button */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.close-auth:hover {
+  background-color: transparent; /* Subtle background color when hovered */
+  border: #C01C28; /* Change border color on hover */
+  color: #C01C28; /* Change text color on hover */
+}
+
+
+
