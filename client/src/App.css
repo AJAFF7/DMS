@@ -1285,7 +1285,7 @@ padding-right: 10px;
     background: linear-gradient(to left, #717171, #666, #717171e4);  
 } */
 .dark-mode-default {
-    background: linear-gradient(135deg, #222222, #555, #222222); 
+    background: linear-gradient(135deg, #555, #222222, #222222); 
 }
 
 .dark-mode-alt1 {
