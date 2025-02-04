@@ -1,3 +1,4 @@
+
 # Use the official Node.js image as a base image
 FROM node:20-alpine3.18
 
@@ -23,6 +24,47 @@ EXPOSE 8282
 
 # Command to run the application
 CMD ["node", "index.js"]
+
+
+
+
+
+
+
+
+
+# # Use the official Node.js image as a base image
+# FROM node:20-alpine3.18
+
+# # Set environment variables (if any needed)
+
+# # Create and set the working directory inside the container
+# WORKDIR /app
+
+# # Copy package.json and package-lock.json to the working directory
+# COPY package*.json ./
+
+# # Install dependencies
+# RUN npm install
+
+# # Copy all server files to the working directory
+# COPY . .
+
+# # If using a frontend build (e.g., React), run the build command
+# # RUN npm run build  # Uncomment this if needed, for example in a React app
+
+# # Copy the build folder (if generated) to the static folder
+# # COPY ./build /app/build
+
+# # Expose the port that the app runs on
+# EXPOSE 8282
+
+# # Command to run the application
+# CMD ["node", "index.js"]
+
+
+
+
 
 
 
