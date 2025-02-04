@@ -27,10 +27,16 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'build', 'index.html')); // Serve index.html for other routes
 });
 
-// Connect to MongoDB
-mongoose.connect('mongodb://jaff:mdb5550140@mongo-service:27017/Client?authSource=admin')
+
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('DB Connected...'))
   .catch((err) => { console.log('MongoDB connection error:', err); });
+
+
+// Connect to MongoDB
+//mongoose.connect('mongodb://jaff:mdb5550140@mongo-service:27017/Client?authSource=admin')
+//  .then(() => console.log('DB Connected...'))
+//  .catch((err) => { console.log('MongoDB connection error:', err); });
 
 // Start the server
 app.listen(port, () => console.log("Server running on port:", port));
