@@ -1,3 +1,9 @@
 /server/build/
 build/
 *.deb
+
+# Ignore ESLint cache
+.eslintcache
+
+# Ignore Webpack and other build caches
+node_modules/.cache/
